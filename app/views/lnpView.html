@@ -1,0 +1,6 @@
+<div ng-controler="lnpController">
+  <app-title ng-if="title.length !== 0" text="title"></app-title>
+  <app-message ng-if="collection.length === 0 && errorMessage.length === 0" content="loadingMessage" type="info"></app-message>
+  <lnp-grid ng-if="collection && collection.length !== 0" data="collection" ng-cloak></lnp-grid>
+  <app-message ng-if="errorMessage && errorMessage.length !== 0" content="errorMessage" type="danger"></app-message>
+</div>

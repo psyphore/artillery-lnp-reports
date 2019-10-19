@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="cardinal" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="cardinal" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="cardinal" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="cardinal" class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Cardinal LNP</title>
+    <meta name="description" content="Artillery Report Consumer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+      [ng-cloak] {
+        display: none;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="js/html5-boilerplate/dist/css/normalize.css" />
+    <link rel="stylesheet" href="js/html5-boilerplate/dist/css/main.css" />
+    <script
+      type="text/javascript"
+      src="js/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"
+    ></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+
+    <div>
+      <header-nav></header-nav>
+      <main ng-view class="container-fluid" style="margin-top: 3vh;"></main>
+    </div>
+
+    <!-- In production use: -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/html5-boilerplate/dist/js/vendor/jquery-3.4.1.min.js"><\/script>'
+        );
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"
+    ></script>
+    <script>
+      window.angular ||
+        document.write('<script src="js/angular/angular.min.js"><\/script>');
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.min.js"
+    ></script>
+    <script>
+      window.ngRouteModule ||
+        document.write(
+          '<script src="js/angular-route/angular-route.min.js"><\/script>'
+        );
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-resource.min.js"
+    ></script>
+    <script>
+      window.ngResourceModule ||
+        document.write(
+          '<script src="js/angular-resource/angular-resource.min.js"><\/script>'
+        );
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"
+      integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.Chart ||
+        document.write(
+          '<script src="js/chart.js/dist/Chart.min.js"><\/script>'
+        );
+    </script>
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/artillery-plugin-statsd@2.2.1/index.js"
+      integrity="sha256-S45e6zjEUGW/X5EAgZ0hQm3yVa57LBmgj9FVjZtNWIc="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.StatsDPlugin ||
+        document.write(
+          '<script src="js/artillery-plugin-statsd/index.js"><\/script>'
+        );
+    </script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.8.16/dayjs.min.js"
+      integrity="sha256-4ZAJq9kaOQU0baQImJ8cE4swV+cAOrx/NL11yOL+VvY="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.dayjs ||
+        document.write('<script src="js/dayjs/dayjs.min.js"><\/script>');
+    </script>
+
+    <script>
+      window.modernizr ||
+        document.write(
+          '<script src="js/html5-boilerplate/dist/js/vendor/modernizr-3.7.1.min.js"><\/script>'
+        );
+    </script>
+
+    <script type="text/javascript" src="app.js"></script>
+
+    <!-- Controllers -->
+    <script type="text/javascript" src="controllers/controllers.js"></script>
+    <script
+      type="text/javascript"
+      src="controllers/landing/landing.controller.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="controllers/reports/reports.controller.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="controllers/report-detail/report-detail.controller.js"
+    ></script>
+
+    <!-- Directives -->
+    <script type="text/javascript" src="directives/directives.js"></script>
+    <script
+      type="text/javascript"
+      src="directives/app-title.directive.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="directives/app-message.directive.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="directives/layout/layout.directive.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="directives/layout/header/header-nav.directive.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="directives/layout/sidenav/sidenav.directive.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="directives/reports-grid/reports-grid.directive.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="directives/lnp-grid.directive.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="directives/lnp-detail.directive.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="directives/report-detail-scenario/report-scenarios.directive.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="directives/report-detail-aggregate/report-aggregate.directive.js"
+    ></script>
+
+    <!-- Services -->
+    <script type="text/javascript" src="services/services.js"></script>
+    <script type="text/javascript" src="services/data.service.js"></script>
+  </body>
+</html>

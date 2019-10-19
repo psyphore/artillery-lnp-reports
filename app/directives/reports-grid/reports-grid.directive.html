@@ -1,0 +1,24 @@
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Size</th>
+        <th scope="col">Extension</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in data | orderBy: 'name'">
+        <th scope="row">
+          <a href="#!/report/detail/{{ item.name }}" class="btn btn-link">{{
+            item.name
+          }}</a>
+        </th>
+        <th scope="row">{{ item.size }}</th>
+        <th scope="row">{{ item.ext }}</th>
+        <th scope="row"></th>
+      </tr>
+    </tbody>
+  </table>
+</div>
