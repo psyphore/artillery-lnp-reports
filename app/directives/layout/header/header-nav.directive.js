@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('cardinal.directives.header-nav-directive', [])
+  .module('artillerylnprc.directives.header-nav-directive', [])
 
   .directive('headerNav', [headerNav]);
 

@@ -1,6 +1,6 @@
 'use strict';
 
-var serviceModule = angular.module('cardinal.services.data-service', [
+var serviceModule = angular.module('artillerylnprc.services.data-service', [
   'ngResource'
 ]);
 

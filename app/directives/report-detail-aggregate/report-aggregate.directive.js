@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('cardinal.directives.report-directive', [])
+  .module('artillerylnprc.directives.report-directive', [])
   .controller('controller', ['$scope', controller])
   .directive('reportAggregate', ['$interval', 'dateFilter', grid]);
 

@@ -1,9 +1,9 @@
 'use strict';
 
 angular
-  .module('cardinal.controllers.report-detail-controller', [
+  .module('artillerylnprc.controllers.report-detail-controller', [
     'ngRoute',
-    'cardinal.services'
+    'artillerylnprc.services'
   ])
   .config([
     '$routeProvider',

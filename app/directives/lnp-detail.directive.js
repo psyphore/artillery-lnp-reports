@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('cardinal.directives.lnpDetail-directive', [])
+  .module('artillerylnprc.directives.lnpDetail-directive', [])
 
   .directive('lnpDetail', lnpDetail);
 

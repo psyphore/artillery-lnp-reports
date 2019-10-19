@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('cardinal.directives.appTitle-directive', [])
+angular.module('artillerylnprc.directives.appTitle-directive', [])
 
 .directive('appTitle', appTitle);
 

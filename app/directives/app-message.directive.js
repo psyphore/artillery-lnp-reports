@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('cardinal.directives.appMessage-directive', [])
+angular.module('artillerylnprc.directives.appMessage-directive', [])
 
 .directive('appMessage', appMessage);
 

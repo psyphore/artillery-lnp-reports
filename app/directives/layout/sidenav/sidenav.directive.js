@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('cardinal.directives.side-nav-directive', [])
+  .module('artillerylnprc.directives.side-nav-directive', [])
 
   .directive('sideNav', sideNav);
 

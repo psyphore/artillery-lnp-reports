@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('cardinal.directives.lnpGrid-directive', [])
+angular.module('artillerylnprc.directives.lnpGrid-directive', [])
 
 .directive('lnpGrid',lnpGrid);
 

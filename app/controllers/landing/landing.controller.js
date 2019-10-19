@@ -1,9 +1,9 @@
 'use strict';
 
 angular
-  .module('cardinal.controllers.landing-controller', [
+  .module('artillerylnprc.controllers.landing-controller', [
     'ngRoute',
-    'cardinal.services'
+    'artillerylnprc.services'
   ])
   .config([
     '$routeProvider',

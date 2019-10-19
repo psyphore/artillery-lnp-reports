@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('cardinal.directives.layout-directive', [
-  'cardinal.directives.side-nav-directive',
-  'cardinal.directives.header-nav-directive'
+angular.module('artillerylnprc.directives.layout-directive', [
+  'artillerylnprc.directives.side-nav-directive',
+  'artillerylnprc.directives.header-nav-directive'
 ]);

@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('cardinal.directives.reports-grid-directive', [])
+  .module('artillerylnprc.directives.reports-grid-directive', [])
   .controller('gridController', ['$scope', function($scope) {}])
   .directive('reportsGrid', [reportsGrid]);
 

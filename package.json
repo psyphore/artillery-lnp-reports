@@ -1,8 +1,8 @@
 {
-  "name": "cardinal-angularjs-mock",
+  "name": "lnp-consumer",
   "private": true,
   "version": "1.0.0",
-  "description": "Cardinal AngularJS mocking app",
+  "description": "LnP AngularJS mocking app",
   "repository": "https://github.com/angular/angular-seed",
   "license": "MIT",
   "dependencies": {
@@ -11,9 +11,10 @@
     "angular-resource": "1.7.8",
     "angular-route": "^1.7.8",
     "artillery": "1.6.0-29",
-    "html5-boilerplate": "^7.2.0",
+    "bootstrap": "^4.3.1",
     "chart.js": "^2.8.0",
-    "dayjs": "^1.8.15"
+    "dayjs": "^1.8.15",
+    "html5-boilerplate": "^7.2.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.7.8",
@@ -24,7 +25,7 @@
     "postinstall": "npm run copy-libs",
     "update-deps": "npm update",
     "postupdate-deps": "npm run copy-libs",
-    "copy-libs": "cpx \"node_modules/{angular,angular-*,html5-boilerplate/dist,artillery,artillery-plugin-*,chart.js/dist,dayjs}/**/*\" app/js -C",
+    "copy-libs": "cpx \"node_modules/{angular,angular-*,html5-boilerplate/dist,artillery,artillery-plugin-*,chart.js/dist,dayjs,bootstrap/dist}/**/*\" app/js -C",
     "prestart": "npm install",
     "start": "serve ./app"
   }

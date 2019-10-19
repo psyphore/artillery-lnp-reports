@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('cardinal.services', ['cardinal.services.data-service']);
+angular.module('artillerylnprc.services', ['artillerylnprc.services.data-service']);

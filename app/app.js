@@ -1,12 +1,12 @@
 'use strict';
 
 angular
-  .module('cardinal', [
+  .module('artillerylnprc', [
     'ngRoute',
     'ngResource',
-    'cardinal.directives',
-    'cardinal.services',
-    'cardinal.controllers'
+    'artillerylnprc.directives',
+    'artillerylnprc.services',
+    'artillerylnprc.controllers'
   ])
 
   .config([

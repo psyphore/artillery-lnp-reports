@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('cardinal.directives.report-chart-directive', [])
+  .module('artillerylnprc.directives.report-chart-directive', [])
   .controller('controller', ['$scope', controller])
   .directive('reportChart', [reportChart]);
 

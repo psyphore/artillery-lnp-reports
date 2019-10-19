@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('cardinal.controllers', [
-  'cardinal.controllers.landing-controller',
-  'cardinal.controllers.reports-controller',
-  'cardinal.controllers.report-detail-controller'
+angular.module('artillerylnprc.controllers', [
+  'artillerylnprc.controllers.landing-controller',
+  'artillerylnprc.controllers.reports-controller',
+  'artillerylnprc.controllers.report-detail-controller'
 ]);
