@@ -1,6 +1,14 @@
-<div ng-controler="lnpDetailedController">
+<div ng-controler="reportDetailController">
   <app-title ng-if="title.length !== 0" text="title"></app-title>
-  <app-message ng-if="detail.length === 0 && errorMessage.length === 0" content="loadingMessage" type="info"></app-message>
-  <lnp-detail ng-if="detail" data="detail" ng-cloak></lnp-detail>
-  <app-message ng-if="errorMessage && errorMessage.length !== 0" content="errorMessage" type="danger"></app-message>
+  <app-message
+    ng-if="detail.length === 0 && errorMessage.length === 0"
+    content="loadingMessage"
+    type="info"
+  ></app-message>
+  <x-report-detail detail="detail"></x-report-detail>
+  <app-message
+    ng-if="errorMessage && errorMessage.length !== 0"
+    content="errorMessage"
+    type="danger"
+  ></app-message>
 </div>

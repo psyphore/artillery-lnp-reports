@@ -30,7 +30,6 @@ function reportsController($scope, $interval, directoryService) {
   var dir = directoryService.get({});
   dir.$promise
     .then(function(list) {
-      console.log(list);
       $scope.collection = Array.from(list.files).filter(function(value) {
         return value.type === 'file';
       });

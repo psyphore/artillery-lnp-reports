@@ -1,18 +1,23 @@
 <div class="container-fluid">
   <div class="row">
+    <pre>{{ detail }}</pre>
+  </div>
+  <div class="row">
     <div class="col-md-6">
       <div class="form-group">
         <div class="col-md-6 mb-3">
           <label for="timestamp">Timestamp</label>
-          <label id="timestamp" class="">{{ data.aggregate.timestamp }}</label>
+          <label id="timestamp" class="form-control">{{
+            detail.aggregate.timestamp
+          }}</label>
         </div>
       </div>
 
       <div class="form-group">
         <div class="col-md-6 mb-3">
           <label for="completed">Completed Scenarios</label>
-          <label id="completed" class="">{{
-            data.aggregate.scenariosCompleted
+          <label id="completed" class="form-control">{{
+            detail.aggregate.scenariosCompleted
           }}</label>
         </div>
       </div>
@@ -20,8 +25,8 @@
       <div class="form-group">
         <div class="col-md-6 mb-3">
           <label for="total_scenarios">Total Scenarios</label>
-          <label id="total_scenarios" class="">{{
-            data.aggregate.scenariosCreated
+          <label id="total_scenarios" class="form-control">{{
+            detail.aggregate.scenariosCreated
           }}</label>
         </div>
       </div>
@@ -29,44 +34,46 @@
       <div class="form-group">
         <div class="col-md-6 mb-3">
           <label for="codes">Codes</label>
-          <ul id="codes">
-            <li ng-repeat="code in Object.keys(data.aggregate.codes)"></li>
-          </ul>
+          <!-- <ul id="codes">
+            <li ng-repeat="code in getObjectFields(detail.aggregate.codes)">
+              {{ code }}
+            </li>
+          </ul> -->
         </div>
       </div>
 
       <div class="form-group">
         <div class="col-md-6 mb-3">
           <label for="errors">Erros</label>
-          <ul id="errors">
-            <li ng-repeat="error in Object.keys(data.aggregate.errors)">
+          <!-- <ul id="errors">
+            <li ng-repeat="error in getObjectFields(detail.aggregate.errors)">
               {{ errors }}
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
 
       <div class="form-group">
         <div class="col-md-6 mb-3">
           <label for="sceneDuration">Scene Duration</label>
-          <ul id="sceneDuration">
+          <!-- <ul id="sceneDuration">
             <li
-              ng-repeat="scene in Object.keys(data.aggregate.scenarioDuration)"
+              ng-repeat="scene in Object.keys(detail.aggregate.scenarioDuration)"
             >
               {{ scene }}
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
 
       <div class="form-group">
         <div class="col-md-6 mb-3">
           <label for="latency">Latency</label>
-          <ul id="latency">
-            <li ng-repeat="latency in Object.keys(data.aggregate.latency)">
+          <!-- <ul id="latency">
+            <li ng-repeat="latency in Object.keys(detail.aggregate.latency)">
               {{ latency }}
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>
@@ -85,7 +92,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="item in data.intermediate | orderBy: 'timestamp'">
+        <tr ng-repeat="item in detail.intermediate | orderBy: 'timestamp'">
           <th scope="row">{{ item.timestamp }}</th>
           <td scope="row">{{ item.concurrency }}</td>
           <td scope="row">{{ item.scenariosCreated }}</td>

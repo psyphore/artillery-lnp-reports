@@ -31,7 +31,6 @@ function reportDetailController($scope, dataService, $routeParams) {
   var ds = dataService.get({ fileName: $scope.reportName });
   ds.$promise
     .then(function(data) {
-      console.log(data);
       $scope.detail = data;
     })
     .catch(function(err) {

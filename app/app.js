@@ -22,6 +22,5 @@ angular
 function configure($locationProvider, $routeProvider, $resourceProvider) {
   $resourceProvider.defaults.stripTrailingSlashes = false;
   $locationProvider.hashPrefix('!');
-
   $routeProvider.otherwise({ redirectTo: '/' });
 }
